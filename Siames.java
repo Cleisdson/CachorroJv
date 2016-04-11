@@ -1,4 +1,4 @@
-package cachorro;
+package br.cbcc.cachorro;
 
 public class Siames extends Gato{
 
@@ -12,6 +12,11 @@ public
 		System.out.println("Siames");
 	}
 	void atravessaRua(){
+	}
+	@Override
+	public void come(int fome) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }

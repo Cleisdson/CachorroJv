@@ -1,4 +1,4 @@
-package cachorro;
+package br.cbcc.cachorro;
 
 public class Persa {
 

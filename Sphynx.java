@@ -1,6 +1,6 @@
-package cachorro;
+package br.cbcc.cachorro;
 
-public class Sphynx {
+public class Sphynx extends Gato{
 
 public
 	void nome(){
@@ -12,6 +12,11 @@ public
 		System.out.println("Sphynx");
 	}
 	void atravessaRua(){
+	}
+	@Override
+	public void come(int fome) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

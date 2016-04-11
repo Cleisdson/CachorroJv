@@ -1,11 +1,12 @@
-package cachorro;
+package br.cbcc.cachorro;
 
-public abstract class Animal {
+public interface Animal {
 
-	public abstract void som();
-	public abstract void brinca();
-	public abstract void come();
-	public abstract void dorme();
-	public abstract void acorda();
+	abstract void som();
+	abstract void brinca();
+	abstract void come();
+	abstract void come(int fome);
+	abstract void dorme();
+	abstract void acorda();
 	
 }

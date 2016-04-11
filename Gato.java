@@ -1,6 +1,6 @@
-package cachorro;
+package br.cbcc.cachorro;
 
-public class Gato extends Animal {
+public abstract class Gato implements Animal {
 
 	public void som(){
 		System.out.println("Miau miau");
@@ -29,5 +29,6 @@ public class Gato extends Animal {
 protected	
 	int vidas;
 	int instinto;
+	int fome;
 	
 }

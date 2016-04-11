@@ -1,6 +1,6 @@
-package cachorro;
+package br.cbcc.cachorro;
 
-public class Mainecoon {
+public class Mainecoon extends Gato{
 	
 public
 	void nome(){
@@ -12,5 +12,10 @@ public
 		System.out.println("Mainecoon");
 	}
 	void atravessaRua(){
+	}
+	@Override
+	public void come(int fome) {
+		// TODO Auto-generated method stub
+		
 	}
 }
