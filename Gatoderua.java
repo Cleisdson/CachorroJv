@@ -1,22 +1,57 @@
 package br.cbcc.cachorro;
 
+import java.util.Random;
+
 public class Gatoderua extends Gato {
 
-public
-	void nome(){
-		System.out.println("Mandachuva");
+	private int carinho;
+
+	public Gatoderua(String nome, String raca, int carinho) {
+		super(nome, raca);
+		this.carinho = carinho;
 	}
-	void fazerExames(){
+
+	public void emitirSom() {
 	}
-	void raca(){
-		System.out.println("Gato de Rua");
+
+	public void brincar() {
 	}
-	void atravessaRua(){
+
+	public void comer() {
 	}
-	@Override
-	public void come(int fome) {
-		
-		
+
+	public void mostrarDados(){
 	}
 	
+	void fazerExames() {
+
+	}
+
+	void atravessarRua() {
+	}
+
+	public void comer(boolean fome) {
+	}
+
+	public void dormir() {
+	}
+
+	public void acordar() {
+	}
+
+	// EXCLUSIVO GATO DE RUA
+	public void fugir() {
+
+		Random gerador = new Random();
+		double chance = gerador.nextInt(0) + 20;
+
+		System.out.println("Gato foi pra rua.");
+
+		if (chance >= carinho) {
+			System.out.println("Gato nao fugiu.");
+			carinho += 1;
+		} else
+			System.out.println("Gato fugiu.");
+	}
+
 }

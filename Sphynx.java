@@ -1,22 +1,36 @@
 package br.cbcc.cachorro;
 
+import java.util.Random;
+
 public class Sphynx extends Gato{
 
-public
-	void nome(){
-		System.out.println("Salem");
+	public Sphynx(String nome, String raca){
+		super(nome, raca);
 	}
-	void fazerExames(){
+	
+	public void emitirSom() {
 	}
-	void raca(){
-		System.out.println("Sphynx");
+
+	public void brincar() {
 	}
-	void atravessaRua(){
+
+	public void comer() {
 	}
-	@Override
-	public void come(int fome) {
-		// TODO Auto-generated method stub
-		
+
+	void fazerExames() {
+
+	}
+
+	void atravessarRua() {
+	}
+
+	public void comer(boolean fome) {
+	}
+	
+	public void dormir() {
+	}
+
+	public void acordar() {
 	}
 
 }

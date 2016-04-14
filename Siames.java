@@ -1,22 +1,55 @@
 package br.cbcc.cachorro;
 
-public class Siames extends Gato{
+import java.util.Random;
 
-public
-	void nome(){
-		System.out.println("Felix");
+public class Siames extends Gato {
+
+	protected int habilidade;
+
+	public Siames(String nome, String raca, int habilidade) {
+		super(nome, raca);
+		this.habilidade = habilidade;
 	}
-	void fazerExames(){
+
+	public void emitirSom() {
 	}
-	void raca(){
-		System.out.println("Siames");
+
+	public void brincar() {
 	}
-	void atravessaRua(){
+
+	public void comer() {
 	}
-	@Override
-	public void come(int fome) {
-		// TODO Auto-generated method stub
-		
+
+	public void mostrarDados() {
 	}
-	
+
+	void fazerExames() {
+
+	}
+
+	void atravessarRua() {
+	}
+
+	public void comer(boolean fome) {
+	}
+
+	public void dormir() {
+	}
+
+	public void acordar() {
+	}
+
+	public void cacarRato() {
+
+		Random gerador = new Random();
+		double chance = gerador.nextInt(0) + 20;
+
+		if (chance >= habilidade) {
+			System.out.println("Gato pegou o rato.");
+			habilidade += 1;
+		} else
+			System.out.println("Gato não pegou o rato.");
+
+	}
+
 }

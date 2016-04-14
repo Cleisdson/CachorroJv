@@ -1,12 +1,22 @@
 package br.cbcc.cachorro;
 
-public interface Animal {
+public abstract class Animal implements Domesticavel {
 
-	abstract void som();
-	abstract void brinca();
-	abstract void come();
-	abstract void come(int fome);
-	abstract void dorme();
-	abstract void acorda();
-	
+	protected int energia;
+	protected String nome;
+	protected String raca;
+
+	public Animal(String nome, String raca) {
+		this.nome = nome;
+		this.raca = raca;
+	}
+
+	public void comer() {
+
+	}
+
+	public void brincar() {
+
+	}
+
 }

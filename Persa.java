@@ -1,16 +1,39 @@
 package br.cbcc.cachorro;
 
-public class Persa {
+import java.util.Random;
 
-public
-	void nome(){
-		System.out.println("Snow Bell");
+public class Persa extends Gato{
+
+	public Persa(String nome, String raca){
+		super(nome, raca);
 	}
-	void fazerExames(){
+	
+	public void emitirSom() {
 	}
-	void raca(){
-		System.out.println("Persa");
+
+	public void brincar() {
 	}
-	void atravessaRua(){
+
+	public void comer() {
 	}
+
+	public void mostrarDados(){
+	}
+
+	void fazerExames() {
+
+	}
+
+	void atravessarRua() {
+	}
+
+	public void comer(boolean fome) {
+	}
+	
+	public void dormir() {
+	}
+
+	public void acordar() {
+	}
+
 }
